@@ -7,6 +7,7 @@ import megapack_2 from "./assets/images/megapack_2.jpeg";
 import megapack from "./assets/images/megapack.jpeg";
 import power_pack from "./assets/images/power_pack.jpeg";
 import transformers from "./assets/images/transformers.jpeg";
+import SiteLayout from './SiteLayout';
 
 const App = () => {
   let totalPrice = 0;
@@ -78,6 +79,7 @@ const App = () => {
         totalEnergy={totalEnergy}
         industrialBatteries={industrialBatteries}
       />
+      <SiteLayout batterys={batterys} />
     </Container >
   );
 };
