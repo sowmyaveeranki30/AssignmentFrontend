@@ -60,6 +60,9 @@ const App = () => {
               type="number"
               value={item.count}
               onChange={(e) => {
+                if (e.target.value < 0) {
+                  return;
+                }
                 const count = parseInt(e.target.value)
                 updateData(item.id, count)
               }}
