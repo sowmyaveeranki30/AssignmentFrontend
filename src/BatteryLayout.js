@@ -52,7 +52,7 @@ const BatteryLayout = ({
                                             color="text.secondary"
                                             component="div"
                                         >
-                                            Energy: {item.energy}
+                                            Energy: {item.energy}MWh
                                         </Typography>
                                         <Typography
                                             variant="body2"
@@ -114,7 +114,7 @@ const BatteryLayout = ({
                 </Typography>
             </Box>
             {totalLandSize > 100 &&
-                <Alert severity="warning" sx={{ position: "fixed", top: 0 }}>site layouts should not exceed 100ft in width</Alert>
+                <Alert severity="warning" sx={{ position: "fixed", top: 0, left: 130 }}>site layouts should not exceed 100ft in width</Alert>
             }
             {industrialBatteries >= 4 &&
                 <Dialog
